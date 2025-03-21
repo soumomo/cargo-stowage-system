@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@react-three/drei": "^10.0.4",
+    "@react-three/fiber": "^9.1.0",
+    "@reduxjs/toolkit": "^2.6.1",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "@types/three": "^0.174.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.4.0",
+    "three": "^0.174.0",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

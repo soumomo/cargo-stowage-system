@@ -1,0 +1,74 @@
+.card {
+  background-color: var(--color-surface);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.card-subtitle {
+  margin-top: 4px;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.card-body {
+  padding: 20px;
+  flex: 1;
+}
+
+.card-footer {
+  padding: 12px 20px;
+  border-top: 1px solid var(--color-border-light);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.card-hoverable {
+  cursor: pointer;
+}
+
+.card-hoverable:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.card-clickable {
+  cursor: pointer;
+}
+
+/* Card variations */
+.card-compact .card-header {
+  padding: 12px 16px;
+}
+
+.card-compact .card-body {
+  padding: 12px 16px;
+}
+
+.card-compact .card-footer {
+  padding: 8px 16px;
+}
+
+/* For grids of cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+} 

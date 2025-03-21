@@ -1,0 +1,111 @@
+:root {
+  --color-primary: #1a73e8;
+  --color-primary-dark: #0d47a1;
+  --color-secondary: #7c4dff;
+  --color-background: #121212;
+  --color-surface: #1e1e1e;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b0b0b0;
+  --color-error: #cf6679;
+  --color-success: #03dac6;
+  --color-warning: #ff9e00;
+  --color-info: #2196f3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+button.primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+button.primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+button.secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+button.secondary:hover {
+  background-color: rgba(26, 115, 232, 0.1);
+}
+
+input, select, textarea {
+  border: 1px solid var(--color-text-secondary);
+  border-radius: 4px;
+  padding: 8px 12px;
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  font-size: 0.9rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.error-message {
+  color: var(--color-error);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.success-message {
+  color: var(--color-success);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+} 
