@@ -10,6 +10,29 @@ A comprehensive application for optimizing cargo stowage within containers, feat
 - **3D Visualization**: See how items are placed within containers
 - **Light/Dark Mode**: Toggle between light and dark themes
 
+## Project Structure
+
+```
+cargo-stowage-system/
+├── backend/                      # Backend API services
+│   ├── app/                      # Main application code
+│   │   ├── api/                  # API endpoints
+│   │   ├── core/                 # Core functionality
+│   │   ├── db/                   # Database connections
+│   │   └── models/               # Data models
+│   └── Dockerfile                # Docker configuration
+├── frontend/                     # React frontend application
+│   ├── public/                   # Static files
+│   ├── src/                      # Source code
+│   │   ├── 3d/                   # 3D visualization components
+│   │   ├── components/           # Reusable UI components
+│   │   ├── pages/                # Application pages
+│   │   ├── store/                # Redux store and slices
+│   │   └── styles/               # CSS and styling
+│   └── Dockerfile                # Docker configuration
+└── docker-compose.yml            # Multi-container Docker configuration
+```
+
 ## Getting Started
 
 ### Prerequisites
